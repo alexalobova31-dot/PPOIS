@@ -1,0 +1,40 @@
+PROJECT_NAME           = "C++ Лабораторные работы"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Реализация многочлена и вещественной матрицы"
+
+OUTPUT_DIRECTORY       = docs
+
+INPUT                  = 1.1 1.2
+RECURSIVE              = YES
+
+FILE_PATTERNS          = *.h *.cpp
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
+GENERATE_LATEX         = NO
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+HAVE_DOT               = YES
+CLASS_GRAPH             = YES
+COLLABORATION_GRAPH     = YES
+CALL_GRAPH              = NO
+CALLER_GRAPH            = NO
+
+SOURCE_BROWSER          = YES
+INLINE_SOURCES         = NO
+
+FULL_PATH_NAMES         = NO
+STRIP_FROM_PATH         = .
+
+GENERATE_TREEVIEW       = YES
+
+OUTPUT_LANGUAGE        = Russian

@@ -1,0 +1,445 @@
+\doxysection{Polynomial Class Reference}
+\hypertarget{classPolynomial}{}\label{classPolynomial}\index{Polynomial@{Polynomial}}
+
+
+Класс многочлена от одной переменной.  
+
+
+
+
+{\ttfamily \#include $<$Polynomial.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}\label{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6} 
+{\bfseries Polynomial} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial_ae71b0037f9d5dcca4deeefdf8ecd7d46}{Polynomial}} (int \mbox{\hyperlink{classPolynomial_a2c8f9fa6f9746a435f0a4d1fc52db14b}{degree}})
+\begin{DoxyCompactList}\small\item\em Создает многочлен заданной степени. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial_a00eb11d412f913a54811781243cf8eaf}{Polynomial}} (const std\+::vector$<$ double $>$ \&coefficients)
+\begin{DoxyCompactList}\small\item\em Создает многочлен из массива коэффициентов. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial_affeea86a50583935b03d5f6450d7daa5}{Polynomial}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& \mbox{\hyperlink{classPolynomial_a908ef26d90752563784bbe9492646f53}{operator=}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+\Hypertarget{classPolynomial_a96130e913259691bd82b7d910d586169}\label{classPolynomial_a96130e913259691bd82b7d910d586169} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Polynomial} ()
+\begin{DoxyCompactList}\small\item\em Деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPolynomial_a2c8f9fa6f9746a435f0a4d1fc52db14b}{degree}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает степень многочлена. \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{classPolynomial_a7cfa7d86dab3904f4e098e13d33713a5}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Получает коэффициент. \end{DoxyCompactList}\item 
+const double \& \mbox{\hyperlink{classPolynomial_a5fb1532be2a8c9938aff601d10894a6d}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\begin{DoxyCompactList}\small\item\em Получает коэффициент для константного объекта. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPolynomial_a42aebb7e468c993adcac986cb8dfbd96}{operator()}} (double x) const
+\begin{DoxyCompactList}\small\item\em Вычисляет значение многочлена. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \mbox{\hyperlink{classPolynomial_a8242168d3de005c486f66034f1c1ccc7}{operator+}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other) const
+\begin{DoxyCompactList}\small\item\em Сложение многочленов. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& \mbox{\hyperlink{classPolynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071}{operator+=}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Сложение с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \mbox{\hyperlink{classPolynomial_ad13134583073c5103033b2053a9e6aec}{operator-\/}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other) const
+\begin{DoxyCompactList}\small\item\em Вычитание многочленов. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& \mbox{\hyperlink{classPolynomial_a9022f5430315e2b2fbe096c41f096282}{operator-\/=}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Вычитание с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \mbox{\hyperlink{classPolynomial_a693a6a81593ba21cacc5b5f58310c319}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other) const
+\begin{DoxyCompactList}\small\item\em Умножение многочленов. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& \mbox{\hyperlink{classPolynomial_a42a16cd4f3f94b679af6d16a75c8b154}{operator\texorpdfstring{$\ast$}{*}=}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Умножение с присваиванием. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \mbox{\hyperlink{classPolynomial_a323311fecbb3e20d5896afee70e3214f}{operator/}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other) const
+\begin{DoxyCompactList}\small\item\em Деление многочленов. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& \mbox{\hyperlink{classPolynomial_a8cbd0ced2e9c66d64507928fe1c73595}{operator/=}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other)
+\begin{DoxyCompactList}\small\item\em Деление с присваиванием. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPolynomial_a221fa2b7494d726b2d0655a2e51f3f88}{operator==}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other) const
+\begin{DoxyCompactList}\small\item\em Сравнивает два многочлена. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPolynomial_a5deec7ce5c966458b5f0d5f571805e17}{operator!=}} (const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&other) const
+\begin{DoxyCompactList}\small\item\em Проверяет неравенство двух многочленов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classPolynomial_ae8148672de86961263b190b707d63025}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&polynomial)
+\begin{DoxyCompactList}\small\item\em Выводит многочлен в поток. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classPolynomial_a07cf3f3483b39217fd77c7eb99a949fe}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classPolynomial}{Polynomial}} \&polynomial)
+\begin{DoxyCompactList}\small\item\em Вводит многочлен из потока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс многочлена от одной переменной. 
+
+Представляет многочлен вида\+: a0 + a1\texorpdfstring{$\ast$}{*}x + a2\texorpdfstring{$\ast$}{*}x\texorpdfstring{$^\wedge$}{\string^}2 + ... + an\texorpdfstring{$\ast$}{*}x\texorpdfstring{$^\wedge$}{\string^}n.
+
+Коэффициенты хранятся в порядке возрастания степени\+: coefficients\mbox{[}0\mbox{]} -\/ свободный член, coefficients\mbox{[}1\mbox{]} -\/ коэффициент при x, coefficients\mbox{[}n\mbox{]} -\/ коэффициент при x\texorpdfstring{$^\wedge$}{\string^}n. 
+
+\label{doc-constructors}
+\Hypertarget{classPolynomial_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPolynomial_ae71b0037f9d5dcca4deeefdf8ecd7d46}\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classPolynomial_ae71b0037f9d5dcca4deeefdf8ecd7d46} 
+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{int}]{degree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Создает многочлен заданной степени. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degree} & Степень многочлена. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPolynomial_a00eb11d412f913a54811781243cf8eaf}\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classPolynomial_a00eb11d412f913a54811781243cf8eaf} 
+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{coefficients}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Создает многочлен из массива коэффициентов. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coefficients} & Коэффициенты многочлена. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPolynomial_affeea86a50583935b03d5f6450d7daa5}\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classPolynomial_affeea86a50583935b03d5f6450d7daa5} 
+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Копируемый многочлен. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classPolynomial_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPolynomial_a2c8f9fa6f9746a435f0a4d1fc52db14b}\index{Polynomial@{Polynomial}!degree@{degree}}
+\index{degree@{degree}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{degree()}{degree()}}
+{\footnotesize\ttfamily \label{classPolynomial_a2c8f9fa6f9746a435f0a4d1fc52db14b} 
+int Polynomial\+::degree (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Возвращает степень многочлена. 
+
+\begin{DoxyReturn}{Returns}
+Степень многочлена. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a5deec7ce5c966458b5f0d5f571805e17}\index{Polynomial@{Polynomial}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classPolynomial_a5deec7ce5c966458b5f0d5f571805e17} 
+bool Polynomial\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет неравенство двух многочленов. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если многочлены не равны. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a42aebb7e468c993adcac986cb8dfbd96}\index{Polynomial@{Polynomial}!operator()@{operator()}}
+\index{operator()@{operator()}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \label{classPolynomial_a42aebb7e468c993adcac986cb8dfbd96} 
+double Polynomial\+::operator() (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption}) const}
+
+
+
+Вычисляет значение многочлена. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Значение переменной. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение многочлена в точке x. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a693a6a81593ba21cacc5b5f58310c319}\index{Polynomial@{Polynomial}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{classPolynomial_a693a6a81593ba21cacc5b5f58310c319} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} Polynomial\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Умножение многочленов. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат умножения. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a42a16cd4f3f94b679af6d16a75c8b154}\index{Polynomial@{Polynomial}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \label{classPolynomial_a42a16cd4f3f94b679af6d16a75c8b154} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& Polynomial\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Умножение с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a8242168d3de005c486f66034f1c1ccc7}\index{Polynomial@{Polynomial}!operator+@{operator+}}
+\index{operator+@{operator+}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{classPolynomial_a8242168d3de005c486f66034f1c1ccc7} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} Polynomial\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Сложение многочленов. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат сложения. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071}\index{Polynomial@{Polynomial}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{classPolynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& Polynomial\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Сложение с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_ad13134583073c5103033b2053a9e6aec}\index{Polynomial@{Polynomial}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{classPolynomial_ad13134583073c5103033b2053a9e6aec} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} Polynomial\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Вычитание многочленов. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат вычитания. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a9022f5430315e2b2fbe096c41f096282}\index{Polynomial@{Polynomial}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \label{classPolynomial_a9022f5430315e2b2fbe096c41f096282} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& Polynomial\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Вычитание с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a323311fecbb3e20d5896afee70e3214f}\index{Polynomial@{Polynomial}!operator/@{operator/}}
+\index{operator/@{operator/}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \label{classPolynomial_a323311fecbb3e20d5896afee70e3214f} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} Polynomial\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Деление многочленов. 
+
+Возвращает частное от деления.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Делитель. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Частное. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a8cbd0ced2e9c66d64507928fe1c73595}\index{Polynomial@{Polynomial}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \label{classPolynomial_a8cbd0ced2e9c66d64507928fe1c73595} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& Polynomial\+::operator/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Деление с присваиванием. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Делитель. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a908ef26d90752563784bbe9492646f53}\index{Polynomial@{Polynomial}!operator=@{operator=}}
+\index{operator=@{operator=}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classPolynomial_a908ef26d90752563784bbe9492646f53} 
+\mbox{\hyperlink{classPolynomial}{Polynomial}} \& Polynomial\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Многочлен для копирования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a221fa2b7494d726b2d0655a2e51f3f88}\index{Polynomial@{Polynomial}!operator==@{operator==}}
+\index{operator==@{operator==}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classPolynomial_a221fa2b7494d726b2d0655a2e51f3f88} 
+bool Polynomial\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Сравнивает два многочлена. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Второй многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если многочлены равны. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a7cfa7d86dab3904f4e098e13d33713a5}\index{Polynomial@{Polynomial}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classPolynomial_a7cfa7d86dab3904f4e098e13d33713a5} 
+double \& Polynomial\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Получает коэффициент. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Степень соответствующего члена. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение коэффициента. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a5fb1532be2a8c9938aff601d10894a6d}\index{Polynomial@{Polynomial}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classPolynomial_a5fb1532be2a8c9938aff601d10894a6d} 
+const double \& Polynomial\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Получает коэффициент для константного объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Степень соответствующего члена. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение коэффициента. 
+\end{DoxyReturn}
+
+
+\label{doc-related-members}
+\Hypertarget{classPolynomial_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classPolynomial_ae8148672de86961263b190b707d63025}\index{Polynomial@{Polynomial}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classPolynomial_ae8148672de86961263b190b707d63025} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{polynomial}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Выводит многочлен в поток. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Поток вывода. \\
+\hline
+{\em polynomial} & Многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Поток вывода. 
+\end{DoxyReturn}
+\Hypertarget{classPolynomial_a07cf3f3483b39217fd77c7eb99a949fe}\index{Polynomial@{Polynomial}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{classPolynomial_a07cf3f3483b39217fd77c7eb99a949fe} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{classPolynomial}{Polynomial}} \&}]{polynomial}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Вводит многочлен из потока. 
+
+Сначала вводится степень, затем коэффициенты от a0 до an.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Поток ввода. \\
+\hline
+{\em polynomial} & Многочлен. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Поток ввода. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Polynomial.\+h\item 
+Polynomial.\+cpp\end{DoxyCompactItemize}
