@@ -1,0 +1,481 @@
+\doxysection{Matrix Class Reference}
+\hypertarget{classMatrix}{}\label{classMatrix}\index{Matrix@{Matrix}}
+
+
+Класс вещественной матрицы.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMatrix_a2dba13c45127354c9f75ef576f49269b}\label{classMatrix_a2dba13c45127354c9f75ef576f49269b} 
+{\bfseries Matrix} ()
+\begin{DoxyCompactList}\small\item\em Конструктор пустой матрицы. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix_a7213414e405fd1c81c394d5053721fa7}{Matrix}} (int rows, int cols)
+\begin{DoxyCompactList}\small\item\em Конструктор матрицы заданного размера. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix_a8fad4f8f910df650caff2d272a9255d9}{Matrix}} (int rows, int cols, double value)
+\begin{DoxyCompactList}\small\item\em Конструктор с заполнением заданным значением. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix_abcf708e864ed3d9db2c3b317c5e529ab}{Matrix}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix}{Matrix}} \& \mbox{\hyperlink{classMatrix_a3e40db12ae78b7616ee3f099bb15f13d}{operator=}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+\Hypertarget{classMatrix_a9b1c3627f573d78a2f08623fdfef990f}\label{classMatrix_a9b1c3627f573d78a2f08623fdfef990f} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Деструктор. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix_ad1b2433d295efcbf371e6f636db757e9}{get\+Rows}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает количество строк. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix_aeaa8f587023f3347eeb2b5d38cfc4665}{get\+Cols}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает количество столбцов. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix_ad9f86f9efbf12242f80bb8556d010737}{set\+Rows}} (int new\+Rows)
+\begin{DoxyCompactList}\small\item\em Изменяет количество строк. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix_afa749b12a5f85c76ea2b9e52928590c6}{set\+Cols}} (int new\+Cols)
+\begin{DoxyCompactList}\small\item\em Изменяет количество столбцов. \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{classMatrix_a39ccc046734f8332b0198314118b5890}{operator()}} (int row, int col)
+\begin{DoxyCompactList}\small\item\em Получает элемент матрицы. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classMatrix_aad5fc68fd2976512c9fff3bc8553fa47}{operator()}} (int row, int col) const
+\begin{DoxyCompactList}\small\item\em Получает элемент константной матрицы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix_a52fe96b59657fee868331bcad04a0bc4}{load\+From\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Загружает матрицу из файла. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_ac8981be0ccfdf0fed6f5a62c5811ba93}{submatrix}} (int sub\+Rows, int sub\+Cols) const
+\begin{DoxyCompactList}\small\item\em Извлекает подматрицу из верхнего левого угла. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a5420e7df2978c907c10cdbb50aff5b5f}{is\+Square}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица квадратной. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a0c8b41c46b5c351bd4b07d2e49b62774}{is\+Diagonal}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица диагональной. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a5d75aad25d2977f05a5bf1281029f657}{is\+Zero}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица нулевой. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a7d045313744e5359d67736590e6bc579}{is\+Identity}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица единичной. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_ace69604ecc19e7cafbedeabfdd4de6b9}{is\+Symmetric}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица симметрической. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a7d9cb61f78544618c93ce1cabd5ea504}{is\+Upper\+Triangular}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица верхней треугольной. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a960bfcb263f5c7567bdb70f1780f8da7}{is\+Lower\+Triangular}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли матрица нижней треугольной. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_a759661b75b9681f3a89ff75e27933b3a}{transpose}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает транспонированную матрицу. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a797d03df703f77cccb25ab9a0770e760}{operator==}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&other) const
+\begin{DoxyCompactList}\small\item\em Сравнивает две матрицы. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix_a44f33a4281273fc500bae6d2c4d86f34}{operator!=}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&other) const
+\begin{DoxyCompactList}\small\item\em Проверяет неравенство двух матриц. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classMatrix_a116e48b76fb80ef08788e7f26bb264b9}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classMatrix}{Matrix}} \&matrix)
+\begin{DoxyCompactList}\small\item\em Выводит матрицу в поток. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classMatrix_a9a549c12eef3543ea13fd2ac2d13d5c5}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classMatrix}{Matrix}} \&matrix)
+\begin{DoxyCompactList}\small\item\em Вводит матрицу из потока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс вещественной матрицы. 
+
+Матрица хранит вещественные элементы типа double. 
+
+\label{doc-constructors}
+\Hypertarget{classMatrix_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMatrix_a7213414e405fd1c81c394d5053721fa7}\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classMatrix_a7213414e405fd1c81c394d5053721fa7} 
+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{int}]{rows}{, }\item[{int}]{cols}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор матрицы заданного размера. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & Количество строк. \\
+\hline
+{\em cols} & Количество столбцов. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_a8fad4f8f910df650caff2d272a9255d9}\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classMatrix_a8fad4f8f910df650caff2d272a9255d9} 
+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{int}]{rows}{, }\item[{int}]{cols}{, }\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор с заполнением заданным значением. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & Количество строк. \\
+\hline
+{\em cols} & Количество столбцов. \\
+\hline
+{\em value} & Начальное значение элементов. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_abcf708e864ed3d9db2c3b317c5e529ab}\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classMatrix_abcf708e864ed3d9db2c3b317c5e529ab} 
+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Копируемая матрица. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classMatrix_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMatrix_aeaa8f587023f3347eeb2b5d38cfc4665}\index{Matrix@{Matrix}!getCols@{getCols}}
+\index{getCols@{getCols}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getCols()}{getCols()}}
+{\footnotesize\ttfamily \label{classMatrix_aeaa8f587023f3347eeb2b5d38cfc4665} 
+int Matrix\+::get\+Cols (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Возвращает количество столбцов. 
+
+\begin{DoxyReturn}{Returns}
+Количество столбцов. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_ad1b2433d295efcbf371e6f636db757e9}\index{Matrix@{Matrix}!getRows@{getRows}}
+\index{getRows@{getRows}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily \label{classMatrix_ad1b2433d295efcbf371e6f636db757e9} 
+int Matrix\+::get\+Rows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Возвращает количество строк. 
+
+\begin{DoxyReturn}{Returns}
+Количество строк. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a0c8b41c46b5c351bd4b07d2e49b62774}\index{Matrix@{Matrix}!isDiagonal@{isDiagonal}}
+\index{isDiagonal@{isDiagonal}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isDiagonal()}{isDiagonal()}}
+{\footnotesize\ttfamily \label{classMatrix_a0c8b41c46b5c351bd4b07d2e49b62774} 
+bool Matrix\+::is\+Diagonal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица диагональной. 
+
+\begin{DoxyReturn}{Returns}
+true, если матрица диагональная. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a7d045313744e5359d67736590e6bc579}\index{Matrix@{Matrix}!isIdentity@{isIdentity}}
+\index{isIdentity@{isIdentity}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isIdentity()}{isIdentity()}}
+{\footnotesize\ttfamily \label{classMatrix_a7d045313744e5359d67736590e6bc579} 
+bool Matrix\+::is\+Identity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица единичной. 
+
+\begin{DoxyReturn}{Returns}
+true, если матрица единичная. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a960bfcb263f5c7567bdb70f1780f8da7}\index{Matrix@{Matrix}!isLowerTriangular@{isLowerTriangular}}
+\index{isLowerTriangular@{isLowerTriangular}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isLowerTriangular()}{isLowerTriangular()}}
+{\footnotesize\ttfamily \label{classMatrix_a960bfcb263f5c7567bdb70f1780f8da7} 
+bool Matrix\+::is\+Lower\+Triangular (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица нижней треугольной. 
+
+\begin{DoxyReturn}{Returns}
+true, если матрица нижняя треугольная. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a5420e7df2978c907c10cdbb50aff5b5f}\index{Matrix@{Matrix}!isSquare@{isSquare}}
+\index{isSquare@{isSquare}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isSquare()}{isSquare()}}
+{\footnotesize\ttfamily \label{classMatrix_a5420e7df2978c907c10cdbb50aff5b5f} 
+bool Matrix\+::is\+Square (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица квадратной. 
+
+\begin{DoxyReturn}{Returns}
+true, если матрица квадратная. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_ace69604ecc19e7cafbedeabfdd4de6b9}\index{Matrix@{Matrix}!isSymmetric@{isSymmetric}}
+\index{isSymmetric@{isSymmetric}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isSymmetric()}{isSymmetric()}}
+{\footnotesize\ttfamily \label{classMatrix_ace69604ecc19e7cafbedeabfdd4de6b9} 
+bool Matrix\+::is\+Symmetric (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица симметрической. 
+
+\begin{DoxyReturn}{Returns}
+true, если матрица симметрическая. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a7d9cb61f78544618c93ce1cabd5ea504}\index{Matrix@{Matrix}!isUpperTriangular@{isUpperTriangular}}
+\index{isUpperTriangular@{isUpperTriangular}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isUpperTriangular()}{isUpperTriangular()}}
+{\footnotesize\ttfamily \label{classMatrix_a7d9cb61f78544618c93ce1cabd5ea504} 
+bool Matrix\+::is\+Upper\+Triangular (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица верхней треугольной. 
+
+\begin{DoxyReturn}{Returns}
+true, если матрица верхняя треугольная. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a5d75aad25d2977f05a5bf1281029f657}\index{Matrix@{Matrix}!isZero@{isZero}}
+\index{isZero@{isZero}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily \label{classMatrix_a5d75aad25d2977f05a5bf1281029f657} 
+bool Matrix\+::is\+Zero (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет, является ли матрица нулевой. 
+
+\begin{DoxyReturn}{Returns}
+true, если все элементы равны нулю. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a52fe96b59657fee868331bcad04a0bc4}\index{Matrix@{Matrix}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily \label{classMatrix_a52fe96b59657fee868331bcad04a0bc4} 
+void Matrix\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Загружает матрицу из файла. 
+
+Формат файла\+: первая строка — количество строк и столбцов, затем элементы матрицы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_a44f33a4281273fc500bae6d2c4d86f34}\index{Matrix@{Matrix}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classMatrix_a44f33a4281273fc500bae6d2c4d86f34} 
+bool Matrix\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверяет неравенство двух матриц. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Вторая матрица. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если матрицы не равны. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a39ccc046734f8332b0198314118b5890}\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classMatrix_a39ccc046734f8332b0198314118b5890} 
+double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{}\end{DoxyParamCaption})}
+
+
+
+Получает элемент матрицы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Номер строки. \\
+\hline
+{\em col} & Номер столбца. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на элемент. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_aad5fc68fd2976512c9fff3bc8553fa47}\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classMatrix_aad5fc68fd2976512c9fff3bc8553fa47} 
+double Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{}\end{DoxyParamCaption}) const}
+
+
+
+Получает элемент константной матрицы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Номер строки. \\
+\hline
+{\em col} & Номер столбца. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение элемента. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a3e40db12ae78b7616ee3f099bb15f13d}\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classMatrix_a3e40db12ae78b7616ee3f099bb15f13d} 
+\mbox{\hyperlink{classMatrix}{Matrix}} \& Matrix\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Матрица для копирования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a797d03df703f77cccb25ab9a0770e760}\index{Matrix@{Matrix}!operator==@{operator==}}
+\index{operator==@{operator==}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classMatrix_a797d03df703f77cccb25ab9a0770e760} 
+bool Matrix\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Сравнивает две матрицы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Вторая матрица. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если матрицы равны. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_afa749b12a5f85c76ea2b9e52928590c6}\index{Matrix@{Matrix}!setCols@{setCols}}
+\index{setCols@{setCols}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{setCols()}{setCols()}}
+{\footnotesize\ttfamily \label{classMatrix_afa749b12a5f85c76ea2b9e52928590c6} 
+void Matrix\+::set\+Cols (\begin{DoxyParamCaption}\item[{int}]{new\+Cols}{}\end{DoxyParamCaption})}
+
+
+
+Изменяет количество столбцов. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Cols} & Новое количество столбцов. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_ad9f86f9efbf12242f80bb8556d010737}\index{Matrix@{Matrix}!setRows@{setRows}}
+\index{setRows@{setRows}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{setRows()}{setRows()}}
+{\footnotesize\ttfamily \label{classMatrix_ad9f86f9efbf12242f80bb8556d010737} 
+void Matrix\+::set\+Rows (\begin{DoxyParamCaption}\item[{int}]{new\+Rows}{}\end{DoxyParamCaption})}
+
+
+
+Изменяет количество строк. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rows} & Новое количество строк. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_ac8981be0ccfdf0fed6f5a62c5811ba93}\index{Matrix@{Matrix}!submatrix@{submatrix}}
+\index{submatrix@{submatrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{submatrix()}{submatrix()}}
+{\footnotesize\ttfamily \label{classMatrix_ac8981be0ccfdf0fed6f5a62c5811ba93} 
+\mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::submatrix (\begin{DoxyParamCaption}\item[{int}]{sub\+Rows}{, }\item[{int}]{sub\+Cols}{}\end{DoxyParamCaption}) const}
+
+
+
+Извлекает подматрицу из верхнего левого угла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Rows} & Количество строк подматрицы. \\
+\hline
+{\em sub\+Cols} & Количество столбцов подматрицы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Подматрица. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a759661b75b9681f3a89ff75e27933b3a}\index{Matrix@{Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily \label{classMatrix_a759661b75b9681f3a89ff75e27933b3a} 
+\mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::transpose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Возвращает транспонированную матрицу. 
+
+\begin{DoxyReturn}{Returns}
+Транспонированная матрица. 
+\end{DoxyReturn}
+
+
+\label{doc-related-members}
+\Hypertarget{classMatrix_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classMatrix_a116e48b76fb80ef08788e7f26bb264b9}\index{Matrix@{Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classMatrix_a116e48b76fb80ef08788e7f26bb264b9} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Выводит матрицу в поток. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Поток вывода. \\
+\hline
+{\em matrix} & Матрица. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Поток вывода. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a9a549c12eef3543ea13fd2ac2d13d5c5}\index{Matrix@{Matrix}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{classMatrix_a9a549c12eef3543ea13fd2ac2d13d5c5} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{classMatrix}{Matrix}} \&}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Вводит матрицу из потока. 
+
+Сначала вводится количество строк и столбцов, затем элементы матрицы.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Поток ввода. \\
+\hline
+{\em matrix} & Матрица. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Поток ввода. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Matrix.\+h\item 
+Matrix.\+cpp\end{DoxyCompactItemize}

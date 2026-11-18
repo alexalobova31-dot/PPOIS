@@ -1,0 +1,65 @@
+\doxysection{Polynomial.\+h}
+\hypertarget{Polynomial_8h_source}{}\label{Polynomial_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POLYNOMIAL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POLYNOMIAL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::vector<double>\ coefficients;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ normalize();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPolynomial_a2c8f9fa6f9746a435f0a4d1fc52db14b}{degree}});}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}(\textcolor{keyword}{const}\ std::vector<double>\&\ coefficients);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ \mbox{\hyperlink{classPolynomial_a908ef26d90752563784bbe9492646f53}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a96130e913259691bd82b7d910d586169}{\string~Polynomial}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPolynomial_a2c8f9fa6f9746a435f0a4d1fc52db14b}{degree}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classPolynomial_a7cfa7d86dab3904f4e098e13d33713a5}{operator[]}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classPolynomial_a7cfa7d86dab3904f4e098e13d33713a5}{operator[]}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPolynomial_a42aebb7e468c993adcac986cb8dfbd96}{operator()}}(\textcolor{keywordtype}{double}\ x)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\ \mbox{\hyperlink{classPolynomial_a8242168d3de005c486f66034f1c1ccc7}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ \mbox{\hyperlink{classPolynomial_a6e4e3e2dfa7f5e2e6e3a5f93aba26071}{operator+=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\ \mbox{\hyperlink{classPolynomial_ad13134583073c5103033b2053a9e6aec}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ \mbox{\hyperlink{classPolynomial_a9022f5430315e2b2fbe096c41f096282}{operator-\/=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\ \mbox{\hyperlink{classPolynomial_a693a6a81593ba21cacc5b5f58310c319}{operator*}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ \mbox{\hyperlink{classPolynomial_a42a16cd4f3f94b679af6d16a75c8b154}{operator*=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\ \mbox{\hyperlink{classPolynomial_a323311fecbb3e20d5896afee70e3214f}{operator/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ \mbox{\hyperlink{classPolynomial_a8cbd0ced2e9c66d64507928fe1c73595}{operator/=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPolynomial_a221fa2b7494d726b2d0655a2e51f3f88}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPolynomial_a5deec7ce5c966458b5f0d5f571805e17}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classPolynomial_ae8148672de86961263b190b707d63025}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ polynomial);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{classPolynomial_a07cf3f3483b39217fd77c7eb99a949fe}{operator>>}}(std::istream\&\ is,\ \mbox{\hyperlink{classPolynomial_a961dec5c0727f03e5273f74a345dfbb6}{Polynomial}}\&\ polynomial);}
+\DoxyCodeLine{00182\ \};}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
